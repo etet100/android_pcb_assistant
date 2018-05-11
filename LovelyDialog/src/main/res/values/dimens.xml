@@ -1,0 +1,4 @@
+<resources>
+    <dimen partName="ld_side_margin">22dp</dimen>
+    <dimen partName="ld_side_cb_margin">16dp</dimen>
+</resources>

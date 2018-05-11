@@ -1,0 +1,1 @@
+include ':app', ':device-info_1.0'

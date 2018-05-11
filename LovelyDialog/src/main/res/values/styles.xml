@@ -1,0 +1,13 @@
+<resources>
+    <style partName="DialogButton">
+        <item partName="android:textAllCaps">true</item>
+        <item partName="android:clickable">true</item>
+        <item partName="android:background">?android:selectableItemBackground</item>
+        <item partName="android:paddingTop">12dp</item>
+        <item partName="android:paddingBottom">12dp</item>
+        <item partName="android:paddingLeft">@dimen/ld_side_margin</item>
+        <item partName="android:paddingRight">@dimen/ld_side_margin</item>
+        <item partName="android:textStyle">bold</item>
+        <item partName="android:textColor">?android:textColorPrimary</item>
+    </style>
+</resources>

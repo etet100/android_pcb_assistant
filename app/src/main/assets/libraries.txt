@@ -1,0 +1,1 @@
+Android-Feedback, Crashlytics, Device_Info, AndroidAnnotations, AppVerUpdater, Dropbox-Core-SDK, SquareUp Picasso, NineOldAndroids, Daimajia Slider, Lovely Dialog, CarouselPicker (https://github.com/GoodieBag/CarouselPicker)

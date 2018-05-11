@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name='EagleView'>
+        <attr name="type" format="enum">
+            <enum name="board" value="0" />
+            <enum name="schematic" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

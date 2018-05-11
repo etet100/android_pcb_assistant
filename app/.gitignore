@@ -1,0 +1,6 @@
+/build
+/.externalNativeBuild
+app-release.apk
+app-debug.apk
+/src/main/**/*.org
+/app.iml

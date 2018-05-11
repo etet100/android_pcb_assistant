@@ -1,0 +1,110 @@
+0.0.34
+
+- poprawione rysowanie kształtu poligonów (bez opcji ratsnest)
+- wyróżnanie ścieżek powiązanych z zaznaczonym elementem
+- formularz wyboru elementu w przypadku zaznaczenia bliskich elementów
+  zastąpiony przesuwanym paskiem wyboru na górze ekranu
+- aktualizacja niektórych bibliotek
+
+0.0.33
+
+- wstęp do obsługi etykiet z opcją 'xref', rysuje symbol etykiety ale nie 
+  do końca zachowuje oryginalny rozmiar
+- tryby wyświetlania niewidocznej strony płytki zwiększające czytelność
+  od strony widocznej, opcje: standardowo (widoczna 100%), półprzeźroczysta,
+  całkiem ukryta
+- opcja Deselect - usuń zaznaczenie
+- w menu Open file dodana opcja Dropbox - nowa sesja, ułatwia to wylogowania
+  z konta dropbox i zalogowanie na inne
+- widok "tylko płytka" oraz "tylko schemat" ustawiony na 100% (zamiast na 
+  prawie 100%)
+- jeśli projekt zostaje wczytany w trybie widoku "tylko płytka" lub "tylko 
+  schemat" to przy pierwszym ustawieniu na "pół na pół" wykonuje dopasowanie
+  rozmiaru, dzięki temu ukryty wcześniej widok ma prawidłowy rozmiar
+- przesuwanie zaznaczenia we właściwe miejsce po użyciu Zoom to fit
+- Flip w menu tylko jeśli wczytano płytkę, dodatkowo opcja chowa się przy 
+  braku miejsca
+
+
+0.0.32 
+
+- minimalna grubość linii uzależniona od gęstości pikseli na ekranie
+  danego urządzenia, w przypadku ekranów o dużej gęstości poprawia 
+  widoczność linii, zwiększa czytelność i estetykę
+- poprawiony błąd zmiany stanu po zakończeniu wczytywanie pliku, powodujący
+  brak możliwości zaznaczania elementów w niektórych projektach
+- poprawiony crash przy próbie użycia opcji flip przed wczytaniem 
+  płytki
+- optymalizacja szybkości rysowania niektórych elementów
+
+0.0.31
+
+- elementy składowe takie jak bramki układów scalonych, możliwe do
+  umieszczania osobno na schemacie, zaznaczają się teraz na 
+  schematach osobno, natomiast wybranie takie elementu na płytce 
+  nadal na schemacie zaznacza całość
+- możliwość przewrócenia płytki na drugą stronę (przycisk flip w menu)
+- nieznacznie zmieniona kolejność rysowania warstw
+- częściowo dokończone okno o programie
+
+0.0.30
+
+- po raz kolejny przebudowane rysowanie tekstów, poprawiona błędnie
+  działajaca opcja mirror na schematach, zmienione wyrównywanie
+  tekstów multiline, pewnie dodane nowe błędy
+- udoskonalone obliczanie wymiarów elementu, powinno nieznacznie
+  ułatwić zaznaczanie oraz dokładniej pokazywać zaznaczony element
+- ukrywanie toolbara, przywracanie na przycisku wstecz
+- obsługa gestu przełączającego widok w ustawieniu poziomym
+- wyłączone zaznaczania elementów z biblioteki frames (ramki)
+- obsługa Dropboxa przez oficjalne API, bez użycia usługi CloudRail
+- zamieniony schemat z płytką w ustawieniu poziomym
+- usunięte podwójne rysowanie nazw i wartości elementów przy opcji smashed
+- poprawki związane z obsługą rotacji w widoku przeglądarki
+- delikatnie poprawiona precyzja skalowania czcionek
+- zaktualizowane klucze umożliwiające działanie modułu Feedback na głównym
+  ekranie
+- obsługa obrotu w ekranie wyboru plików
+- blokada przycisku wstecz w momencie ładowania pliku, zapobiega 
+  błędom nullexception
+- usunięty dodatkowy tryb rysowania tekstów dla Android 4 i starszych
+- ikonki schematu i plików na liście wyboru pliku
+- różne poprawki i różne nowe błędy...
+
+0.0.29
+
+- poprawione skalowanie tekstów Vector i Proportional
+- obsługa łamania tekstu
+- możliwość zmiany układu ekranu gestem slide up lub down przy lewym brzegu
+- zapamiętywanie ostatniego układu
+- inne mniej lub bardziej widoczne poprawki
+
+0.0.28
+
+- oddzielna opcja otwarcia pliku z pamieci dodatkowej (zwykle karta)
+- ustalenie domyślnych ścieżek na user data dir i external data dir zamiast root (/)
+
+0.0.27
+
+- część widoków dopasowana do mniejszych urządzeń, testowane na Huawei VNS-L21
+
+0.0.26
+
+- lista ostatnio otwieranych plików
+- poprawione null exception gdy tylko płytka lub schemat jest wczytany
+- wyeliminowane wielokrotne inicjalizowanie dropboxa, dodatkowo ulepszona obsługa błędów
+- automatyczne przesuwanie widoku aby pokazać szukany element
+- wyśrodkowanie widoku przy przełączaniu typu widoku (schemat, schemat/płytka, płytka)
+- drobne poprawki wyświetlania list warstw i elementów
+- delikatna zmian wyglądu ramki zaznaczenia elementu
+- przeróżne drobne poprawki
+
+0.0.25
+
+- poprawiona kolejność rysowania warstw
+- poprawione rysowanie kształtu padów
+- poprawione działanie opcji smashed
+- zmieniony sposób skalowania czcionek dla androidów 5+
+- dodana lepsza czcionka typu vector
+- moduł licencjonowania
+- wiele drobniejszych poprawek

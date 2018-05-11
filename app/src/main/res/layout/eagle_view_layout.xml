@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <bts.pcbassistant.EagleView
+        android:id="@+id/view"
+        layout_alignParentRight="true"
+        layout_alignParentTop="true"
+        layout_marginRight="0dp"
+        layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

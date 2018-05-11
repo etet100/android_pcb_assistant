@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Eagle PCB Assistant</string>
+    <string name="ErrorWhileOpeningFile">There was an error while opening the file!</string>
+    <string name="OK">OK</string>
+    <string name="action_settings">Settings</string>
+    <string name="back">..</string>
+    <string name="cancel">Cancel</string>
+    <string name="check_all">Show all</string>
+    <string name="check_none">Hide all</string>
+    <string name="choose_file">Choose File</string>
+    <string name="choose_file_method">Select method:</string>
+    <string name="error_opening_file">There was an error while opening the file!</string>
+    <string name="no_active_view">No view selected</string>
+    <string name="open_file">Open File</string>
+    <string name="show_layers">Select Layers</string>
+    <string name="change_layout">Change layout</string>
+    <string name="zoom_to_fit">Zoom to fit</string>
+    <string name="hide_toolbar">Hide toolbar</string>
+    <string name="flip_view">Flip board</string>
+
+    <string name="layout_schematic">Schematic</string>
+    <string name="layout_board">Board</string>
+    <string name="layout_dual">Dual view</string>
+
+    <string name="blind_side_mode">Blind side mode</string>
+    <string name="blind_side_default">Normal</string>
+    <string name="blind_side_hidden">Hidden</string>
+    <string name="blind_side_transparent">Semi-transparent</string>
+
+    <string name="welcome_screen">Welcome screen</string>
+    <string name="close_application">Exit</string>
+    <string name="title_activity_workspace">WorkspaceActivity</string>
+
+    <string name="open_file_dropbox">Dropbox account</string>
+    <string name="open_file_dropbox_new_session">Dropbox account (new session)</string>
+    <string name="open_file_internal_browser">Local file (internal storage)</string>
+    <string name="open_file_internal_browser_sdcard">Local file (external)</string>
+    <string name="title_activity_about">AboutActivity</string>
+
+    <string name="select_all">Select all</string>
+    <string name="select_none">Select none</string>
+
+    <string name="select_part">Ambiguous selection</string>
+
+    <string name="dropbox_app_key">mqdiowz0i7b4uhf</string>
+    <string name="deselect">Deselect</string>
+</resources>

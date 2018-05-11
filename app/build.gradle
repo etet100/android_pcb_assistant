@@ -1,0 +1,86 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'bts'
+            keyPassword 'bfeea22964'
+            storeFile file('C:/Android/bts.jks')
+            storePassword 'bfeea22964'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId 'bts.pcbassistant'
+        minSdkVersion 16
+        targetSdkVersion 21
+        versionCode 13
+        versionName '0.0.34'
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.release
+        externalNativeBuild {
+            cmake {
+                cppFlags "-fexceptions"
+            }
+        }
+    }
+    buildTypes {
+        release {
+            //minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            jniDebuggable true
+            renderscriptDebuggable true
+            proguardFile 'C:/Android/PCBAssistant/app/proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+}
+
+def AAVersion = "4.3.0" // change this to your desired version, for example the latest stable: 4.3.0
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/feedback_v6.jar')
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+        transitive = true;
+    }
+    compile project(':device-info_1.0')
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'org.androidannotations:androidannotations-api:4.3.1'
+    compile 'com.github.atzcx:AppVerUpdater:1.0.7'
+    compile 'com.android.support:design:25.3.1'
+    //compile 'com.cloudrail:cloudrail-si-android:2.18.0'
+    compile 'com.dropbox.core:dropbox-core-sdk:3.0.3'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'org.androidannotations:androidannotations:4.3.1'
+    compile 'com.squareup.picasso:picasso:2.3.2'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+    compile 'com.yarolegovich:lovely-dialog:1.0.7'
+}

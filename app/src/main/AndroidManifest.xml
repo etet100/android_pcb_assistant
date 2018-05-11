@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bts.pcbassistant">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <supports-screens android:smallScreens="false"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true" />
+
+    <application
+        android:name=".EaglePCBAssistantApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MyTheme">
+        <activity
+            android:name=".StartActivity_"
+            android:configChanges="keyboardHidden|screenSize"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".selectFile.SelectFileActivity_"
+            android:theme="@style/MyTheme_Dialog"
+            />
+        <!-- android:theme="@android:style/Theme.Holo.Dialog"  -->
+        <activity
+            android:name=".search.SearchActivity_"
+            android:parentActivityName=".WorkspaceActivity_"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:theme="@style/MyTheme_Dialog"
+            />
+        <activity
+            android:name=".WorkspaceActivity_"
+            android:label="@string/app_name"
+            android:parentActivityName=".StartActivity_" />
+
+        <activity
+            android:name="com.dropbox.core.android.AuthActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask">
+            <intent-filter>
+
+                <!-- Change this to be db- followed by your app key -->
+                <data android:scheme="db-mqdiowz0i7b4uhf" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="65728c6424d02692ad2e6d10dac196585ba9326d" />
+
+        <activity
+            android:name=".WorkspaceActivity"
+            android:label="@string/title_activity_workspace"
+            android:theme="@style/MyTheme" />
+
+        <!-- android:label="@string/title_activity_about" -->
+        <activity
+            android:name=".about.AboutActivity_"
+            android:parentActivityName=".StartActivity_">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bts.pcbassistant.StartActivity_" />
+        </activity>
+        <activity
+            android:name=".welcome.LicActivity_"
+            android:theme="@style/MyTheme_Dialog"/>
+    </application>
+
+</manifest>

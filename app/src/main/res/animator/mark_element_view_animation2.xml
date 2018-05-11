@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+    android:duration="300"
+    android:fillAfter="true"
+
+    android:valueFrom="0"
+    android:valueTo="10"
+    android:valueType="intType"
+
+    android:repeatMode="reverse"
+    android:repeatCount="infinite"
+/>
